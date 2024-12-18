@@ -1,0 +1,105 @@
+## 网站设置
+# 标题
+title: Blog
+# 选项卡标题
+SEOTitle: Sleexy丨Blog
+# 首页背景图片
+header-img: img/post-bg-debug.png
+# 邮箱设置
+email: Hax_beixi@outlook.com
+# 网站介绍
+description: "I guess it comes down to a simple choice:get busy living or get busy dying."
+# 关键词
+keyword: "python,food,life"
+# 博客访问链接
+url: "http://sleexy.gitee.io"
+# '/blog' if your blog hosted on 'host/blog'
+baseurl: ""
+
+## 侧边栏设置
+# 是否开启侧边栏 true 开始 false 关闭
+sidebar: true
+# 侧边栏描述语句
+sidebar-about-description: "要努力呀,为了想要的生活,为了人间的烟火气,为了今天的风和月"
+# 侧边栏头像
+sidebar-avatar: /img/sidebar-avatar.jpg
+
+## 社交网站设置
+RSS: true
+# GitHub个人页面 填写用户名
+github_username:   Sleexycg  
+
+## 构建设置
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+## Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+## Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+## 评论系统 （国内被墙）
+# Disqus（https://disqus.com/）
+# disqus_username: 
+
+## Gitalk
+gitalk:
+  #是否开启Gitalk评论，需要使用Markdown语法，不方便，不开放
+  enable: false
+  #生成的clientID
+  clientID: 2ac77d9d94bba479fdf8
+  #生成的clientSecret
+  clientSecret: 62e14924f16638f80e18a187fef5f4727c835ffb
+  #仓库名称
+  repo: 
+  #github用户名
+  owner: Sleexycg
+  admin: Sleexycg
+  #是否启用类似FB的阴影遮罩
+  distractionFreeMode: true
+
+## 统计
+#Baidu Analytics
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics 关于网站统计，由于是个人网站，故不开放此功能 
+#ga_track_id: ''
+# 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+#ga_domain: auto
+
+## 标签设置
+# 是否使用首页标签
+featured-tags: true
+# 相同标签数量大于这个数，才会出现在首页
+featured-condition-size: 0
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+## 友情链接
+friends: [
+    {
+        title: "阳坨RYAN",
+        href: "https://wryan.top/"
+    },{
+        title: "无限宝第三方插件",
+        href: "https://klxn.gitee.io/wxb/"
+    },{
+        title: "一起学Java",
+        href: "http://supersunsir.com"
+    },{
+        title: "Amano陽菜&丁同勖",
+        href: "https://dtx-qaq.gitee.io/"
+    }
+]
